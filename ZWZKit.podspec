@@ -103,6 +103,26 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'Classes/ZBFactory/ZBFactory.h'
   end
 
+  s.subspec 'Frameworks' do 'ss'
+    ss.source_files = 'Frameworks/*'
+    ss.vendored_frameworks = 'Frameworks/ZWZFramework.framework'
+  end
+
+  s.subspec 'Libraries' do 'ss'
+    ss.source_files = 'Libraries/ZBLibrary/libZBLibrary.a'
+    ss.vendored_libraries = 'Libraries/ZBLibrary/libZBLibrary.a'
+    ss.public_header_files = 'Libraries/ZBLibrary/ZBLibrary.h'
+
+  end
+
+  s.subspec 'Resources' do 'ss'
+    ss.source_files = 'Resources/*'
+    ss.resource_bundles = {
+    'ZBBundle' => ['Resources/ZBBundle.bundle'],
+    }
+  end
+
+
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
