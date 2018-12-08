@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Resources' do |ss|
-    ss.source_files = 'Resources/*'
+    ss.source_files = 'Resources/ZBBundle.bundle'
     ss.resource_bundles = {
     'ZBBundle' => ['Resources/ZBBundle.bundle'],
     }
