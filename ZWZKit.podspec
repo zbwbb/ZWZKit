@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Frameworks' do 'ss'
     # ss.source_files = 'Frameworks/ZWZFramework.framework'
-    ss.vendored_frameworks = 'Frameworks/ZWZFramework.framework'
+    vendored_frameworks = 'Frameworks/ZWZFramework.framework'
   end
 
   s.subspec 'Libraries' do 'ss'
