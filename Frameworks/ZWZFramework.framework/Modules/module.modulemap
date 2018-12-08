@@ -1,0 +1,6 @@
+framework module ZWZFramework {
+  umbrella header "ZWZFramework.h"
+
+  export *
+  module * { export * }
+}
