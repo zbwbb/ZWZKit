@@ -96,6 +96,12 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "Classes/ZWZKit.h"
 
+  # ――― subspec ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
+  s.subspec 'ZBFactory' do |ss|
+    ss.source_files = 'Classes/ZBFactory/*.{h,m}'
+    ss.public_header_files = 'Classes/ZBFactory/ZBFactory.h'
+  end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
