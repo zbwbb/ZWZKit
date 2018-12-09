@@ -104,19 +104,19 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Frameworks' do |ss|
-    ss.source_files = 'Frameworks/ZWZFramework.framework'
+    # ss.source_files = 'Frameworks/ZWZFramework.framework'
     ss.vendored_frameworks = 'Frameworks/ZWZFramework.framework'
   end
 
   s.subspec 'Libraries' do |ss|
     ss.source_files = 'Libraries/ZBLibrary/libZBLibrary.a','Libraries/ZBLibrary/ZBLibrary.h'
     ss.vendored_libraries = 'Libraries/ZBLibrary/libZBLibrary.a'
-    ss.public_header_files = 'Libraries/ZBLibrary/ZBLibrary.h'
+    ss.public_header_files = 'Libraries/ZBLibrary/libZBLibrary.a','Libraries/ZBLibrary/ZBLibrary.h'
 
   end
 
   s.subspec 'Resources' do |ss|
-    ss.source_files = 'Resources/ZBBundle.bundle'
+    # ss.source_files = 'Resources/ZBBundle.bundle'
     ss.resource_bundles = {
     'ZBBundle' => ['Resources/ZBBundle.bundle'],
     }
