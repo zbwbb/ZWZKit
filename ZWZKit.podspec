@@ -111,7 +111,7 @@ Pod::Spec.new do |s|
   s.subspec 'Libraries' do |ss|
     ss.source_files = 'Libraries/ZBLibrary/libZBLibrary.a','Libraries/ZBLibrary/ZBLibrary.h'
     ss.vendored_libraries = 'Libraries/ZBLibrary/libZBLibrary.a'
-    ss.public_header_files = 'Libraries/ZBLibrary/libZBLibrary.a','Libraries/ZBLibrary/ZBLibrary.h'
+    # ss.public_header_files = 'Libraries/ZBLibrary/libZBLibrary.a','Libraries/ZBLibrary/ZBLibrary.h'
 
   end
 
